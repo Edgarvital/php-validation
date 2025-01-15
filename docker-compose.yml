@@ -9,11 +9,11 @@ services:
     volumes:
       - ./:/var/www
       - ./application:/var/www/application
-    #environment:
-    #  - COMPOSER_HOME=/composer
-    #  - COMPOSER_ALLOW_SUPERUSER=1
-    #  - APP_ENV=local
-    #  - APP_KEY=base64:V9lMOMKFhL7IdZ9/3KcjtT24SIqRw+Oz7ObmYy9YvJQ=
+    environment:
+      - COMPOSER_HOME=/composer
+      - COMPOSER_ALLOW_SUPERUSER=1
+      - APP_ENV=local
+      - APP_KEY=base64:TP1xX1zwCf2RpHdHMC7FpUUgTZAuHfXJXjyUtXe1WJA=
     depends_on:
       - db
 

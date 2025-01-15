@@ -26,7 +26,6 @@ class User extends Authenticatable
         'state',
         'city',
         'is_active',
-        'role_id',
         'password',
     ];
 

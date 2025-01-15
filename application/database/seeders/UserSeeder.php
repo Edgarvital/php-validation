@@ -8,11 +8,6 @@ use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         $admin = User::where('email', 'admin@admin.com')
@@ -33,5 +28,6 @@ class UserSeeder extends Seeder
             ]);
         }
 
+        User::factory()->count(50)->create();
     }
 }

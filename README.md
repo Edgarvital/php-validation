@@ -1,63 +1,55 @@
-# php-validation
-Teste Técnico
+# Uhuu-PHP
+Api e Front-End para gerenciamento de Clientes
 
-# Teste para à vaga de Desenvolvedor Full Stack
-
-Olá caro desenvolvedor, nesse teste analisaremos seu conhecimento geral e inclusive velocidade de desenvolvimento.
-
-## Instruções
-
-O desafio consiste em implementar uma aplicação web utilizando o framework PHP Laravel, um banco de dados relacional (Mysql ou Postgres), que terá como finalidade o cadastro de clientes em nossa base de dados.
-
-Sua aplicação deve possuir:
-
+# Funcionalidades Implementadas
 - CRUD de clientes:
-  - Criar, editar, excluir e listar cadastros.
-- Um cliente pode se cadastrar apenas uma vez e com verificação de recaptcha no momento do cadastro.
-- Deve ser ser possível "ativar" e "desativar" o cliente, evitando assim no caso de ¨desativar¨ o mesmo que ele não consiga logar na aplicação.
-- Cada CRUD:
-  - Deve ser filtrável e ordenável por qualquer campo, e possuir paginação de 20 itens.
-  - Deve possuir formulários para criação e atualização de seus cadastros.
-  - Deve permitir a deleção de qualquer cliente.
-  - Implementar validações de campos obrigatórios e tipos de dados.
+  - Criar, editar, excluir, excluir em massa e listar cadastros.
+- Validação dos dados dos clientes
+- Desativar e reativar usuário com bloqueio de login
+- Filtro, paginação variavel e ordenação na lista de clientes
+- Autenticação
+- API Rest
+- Testes unitários e de feature
 
 ## Banco de dados
 
-- O banco de dados deve ser criado ou editado utilizando Migrations do framework Laravel.
+- PostgreSQL escolhido para a aplicação
+- Possui sistema de seeder
 
-## Tecnologias a serem utilizadas
-
-Devem ser utilizadas as seguintes tecnologias:
+## Tecnologias utilizadas
 
 - HTML
 - CSS
 - Javascript
 - Framework Laravel (PHP)
 - Docker (construção do ambiente de desenvolvimento)
-- Mysql ou Postgres
+- Postgres
+- React
 
-## Entrega
+## O que faltou
+- Implementação do recaptcha (Faltou tempo)
 
-- Para iniciar o teste, faça um fork deste repositório; **Se você apenas clonar o repositório não vai conseguir fazer push.**
-- Crie uma branch com o seu nome completo;
-- Altere o arquivo README.md com as informações necessárias para executar o seu teste (comandos, migrations, seeds, etc);
-- Depois de finalizado, envie-nos o pull request;
+## Guia de Instalação da API
 
-## Bônus
+##Requisitos:
+- Criar o .env com as informações do .env.example
 
-- API Rest JSON para todos os CRUDS listados acima.
-- Permitir deleção em massa de itens nos CRUDs.
-- Permitir que o usuário mude o número de itens por página.
-- Implementar autenticação de usuário na aplicação.
-- Testes unitários
+### Comandos necessários:
+- Na pasta da API, execute os seguintes comandos:
+- docker compose up
+- docker-compose exec app bash
+- cd application
+- composer install
+- php artisan key:generate
+- php artisan migrate
+- php artisan db:seed
 
-## O que iremos analisar
+## Guia de Instalação do FrontEnd
+- Na pasta do FrontEnd, execute os seguintes comandos:
+- npm install
+- npm run dev
 
-- Organização do código;
-- Aplicação de design patterns;
-- Aplicação de testes;
-- Separação de módulos e componentes;
-- Legibilidade;
-- Criação do ambiente com Docker.
-
-### Boa sorte!
+## Informações Uteis:
+- Credenciais do Usuário Administrador: {email: "admin@admin.com", password: "password"}
+- Há alguns artefatos uteis na pasta da API, como o MER e o Json do Postman
+- Video do uso do sistema completo: https://youtu.be/ET6er5QKhIQ

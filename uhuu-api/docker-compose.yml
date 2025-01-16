@@ -13,7 +13,7 @@ services:
       - COMPOSER_HOME=/composer
       - COMPOSER_ALLOW_SUPERUSER=1
       - APP_ENV=local
-      - APP_KEY=base64:TP1xX1zwCf2RpHdHMC7FpUUgTZAuHfXJXjyUtXe1WJA=
+      #- APP_KEY=base64:TP1xX1zwCf2RpHdHMC7FpUUgTZAuHfXJXjyUtXe1WJA=
     depends_on:
       - db
 
